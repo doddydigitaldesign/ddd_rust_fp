@@ -8,7 +8,6 @@
 /// });
 /// assert_eq!(mapped_data, [1, 4, 9, 16, 25, 36, 49]);
 ///```
-/// To Do:
 pub fn map<T, K>(arr: Vec<T>, f: fn(&T) -> K) -> Vec<K> {
     arr.into_iter().map(|el| f(&el)).collect()
 }
