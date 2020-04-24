@@ -7,7 +7,6 @@
 /// });
 /// assert_eq!(filtered_data, [2, 4, 6]);
 ///```
-/// To Do:
 pub fn filter<T>(arr: Vec<T>, f: fn(&T) -> bool) -> Vec<T> {
     arr.into_iter().filter(|el| f(&el)).collect()
 }
